@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "snack-counter-automation"
+version = "1.0.0"
+description = "Framsikt Snack Counter Automation - take-home assignment"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pytest]
+testpaths = ["tests"]
+python_functions = ["test_*"]
+markers = [
+    "refill_lifecycle",
+    "volunteer_assignment",
+    "budget",
+    "concurrency",
+    "reimbursement",
+    "reporting",
+]
